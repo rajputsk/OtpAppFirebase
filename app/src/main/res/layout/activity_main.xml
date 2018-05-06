@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.skrajput.otpapp.MainActivity"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Enter the number"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Enter no"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="submit" />
+
+    <TextView
+        android:id="@+id/otp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Enter OTP"
+        android:visibility="gone"
+        android:layout_weight="0.00" />
+
+    <EditText
+        android:id="@+id/otp_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="OTP"
+        android:visibility="gone"
+        android:inputType="number" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/otp_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OTP"
+        android:visibility="gone"/>
+
+
+</LinearLayout>
